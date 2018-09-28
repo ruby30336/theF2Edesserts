@@ -56,6 +56,7 @@ img{
 }
 /* css-reset-end */
 
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css");
 .wrapper{
 	width: 1024px;
 	height: auto;
@@ -208,6 +209,8 @@ img{
 	background-image: url('../images/banner-menu_1.jpg');
 	background-size: cover;
 	background-position: center;
+
+	border: 2px solid #ffffff;
 	
 }
 
@@ -221,10 +224,10 @@ img{
 	display: block;
 	writing-mode: vertical-lr;
 	text-decoration: none;
-	padding: 62px 116px 58px 119px;	
+	padding: 62px 116px 58px 116px;	
 	font-size: 24px;
 	color: #ffffff;
-	letter-spacing: 10px;
+	letter-spacing: 9px;
 	background-color: rgba(63, 93, 69, 0.8);
 }
 .banner ul li a:hover{
@@ -232,7 +235,7 @@ img{
 	background-color: rgba(255, 225, 128, 0.9);
 }
 
-
+/* 首頁banner結束 */
 .main{
 	width: 100%;
 	
@@ -449,8 +452,231 @@ img{
 	cursor: pointer;
 	background-color: #ffe180;
 }
+/* 首頁內容結束，product內容開始 */
 
+.product-container{
+	width: 100%;
+	padding: 0 42px;
+}
+.product-banner{
+	width: 100%;
+	height: 496px;
+	background-image: url('../images/product-banner.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: right;
+	padding: 40px 40px 0 0;
+}
+.product-banner img{
+	width: 89px;
+}
+.product-main{
+	padding: 60px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	width: 100%;
+}
+.product-menu{
+	width: 300px;
+	height: 325px;
+	
+}
+.product-menu ul{
+	width: 100%;
+}
+.product-menu ul li{
+	width: 100%;
+	height: 65px;
+	font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	border: 1px solid #EAF0ED;
+	font-family: ‘cwTeXYen’, sans-serif;
+	font-weight: 800;
+	color: #3f5d45;
+}
+.product-menu ul li:nth-child(1){
+	background-color: #3f5d45;
+	color: #eaf0ed;
+}
 
+.product-menu ul li p{
+	font-family: cwTeXYen, sans-serif;
+	color: #eaf0ed;
+}
+.product-menu ul li a{
+	display: block;
+	font-family: ‘cwTeXYen’, sans-serif;
+	text-align: center;
+	text-decoration: none;
+	color: #3f5d45;
+	height: 100%;
+	width: 100%;
+	font-weight: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.product-menu ul li a:hover{
+	background-color: #EAF0ED;
+
+}
+.product-list{
+	width: 620px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.product-list ul{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: ;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.product-dessert-card{
+	width: 300px;
+	position: relative;
+
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: stretch;
+}
+.product-dessert-card ul{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.product-dessert-card ul li{
+	color: #3f5d45;
+}
+.product-dessert-card ul li:nth-child(2){
+    height: 56px;
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: center;
+}
+.product-dessert-card div{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	border: 1px solid #eaf0ed;
+
+}
+.product-dessert-card p{
+	font-family: ‘cwTeXYen’, sans-serif;
+	font-size: 20px;
+
+}
+
+.product-dessert-card ul li input{
+	width: 100%;
+	height: 65px;
+	font-size: 24px;
+	background-color: #eaf0ed;
+	font-family: ‘cwTeXYen’, sans-serif;
+	color: #3f5d45;
+	font-weight: bold;
+	border: none;
+}
+
+#product-dessert-card-bg1{
+	width: 100%;
+	height: 315px;
+	background-image: url('../images/product-dessert-list-1.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#product-dessert-card-bg2{
+	width: 100%;
+	height: 315px;
+	background-image: url('../images/product-dessert-list-2.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#product-dessert-card-bg3{
+	width: 100%;
+	height: 315px;
+	background-image: url('../images/product-dessert-list-3.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#product-dessert-card-bg4{
+	width: 100%;
+	height: 315px;
+	background-image: url('../images/product-dessert-list-4.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#product-dessert-card-bg5{
+	width: 100%;
+	height: 315px;
+	background-image: url('../images/product-dessert-list-5.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#product-dessert-card-bg6{
+	width: 100%;
+	height: 315px;
+	background-image: url('../images/product-dessert-list-6.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.next-page{
+	width: 300px;
+
+	align-self: flex-end;
+}
+.next-page ul{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: center;
+	height: 60px;
+	margin-top: 10px;
+}
+.next-page ul li{
+	width: 60px;
+	height: 100%;
+	text-align: center;
+	font-size: 20px;
+	
+}
+.next-page ul li a{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #3f5d45;
+	border: 1px solid #eaf0ed;
+}
+.next-page ul li a:hover{
+	
+}
+.next-page ul li a:active{
+	background-color: #3f5d45;
+	color: #eaf0ed;
+}
 /* 表尾 */
 
 .footer{
@@ -593,3 +819,4 @@ img{
 	align-self: flex-start;
 	font-size: 16px;
 }
+
