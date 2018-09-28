@@ -206,7 +206,7 @@ img{
 	float: right;
 	width: 259px;
 	height: 256px;
-	background-image: url('../images/banner-menu_1.jpg');
+	background-image: url('../images/banner-menu_1(300x450).jpg');
 	background-size: cover;
 	background-position: center;
 
@@ -215,10 +215,10 @@ img{
 }
 
 .banner ul li:nth-child(2){
-	background-image: url('../images/banner-menu_2.jpg');
+	background-image: url('../images/banner-menu_2(300x403).jpg');
 }
 .banner ul li:nth-child(3){
-	background-image: url('../images/banner-menu_3.jpg');
+	background-image: url('../images/banner-menu_3(300x373).jpg');
 }
 .banner ul li a{
 	display: block;
@@ -396,7 +396,7 @@ img{
 	text-align: center;
 }
 #home-dessert-card-bg1{
-	background-image: url('../images/home_cart_dessert_1.jpg');
+	background-image: url('../images/home_cart_dessert_1(300x450).jpg');
 	width: 100%;
 	height: 351px;
 	background-position: center;
@@ -404,7 +404,7 @@ img{
 	background-size: cover;
 }
 #home-dessert-card-bg2{
-	background-image: url('../images/home_cart_dessert_2.jpg');
+	background-image: url('../images/home_cart_dessert_2(300x375).jpg');
 	width: 100%;
 	height: 351px;
 	background-position: center;
@@ -412,7 +412,7 @@ img{
 	background-size: cover;
 }
 #home-dessert-card-bg3{
-	background-image: url('../images/home_cart_dessert_3.jpg');
+	background-image: url('../images/home_cart_dessert_3(300x450).jpg');
 	width: 100%;
 	height: 352px;
 	background-position: center;
@@ -461,7 +461,7 @@ img{
 .product-banner{
 	width: 100%;
 	height: 496px;
-	background-image: url('../images/product-banner.jpg');
+	background-image: url('../images/product-banner(2000x1282).jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -595,46 +595,48 @@ img{
 	font-weight: bold;
 	border: none;
 }
-
+.product-dessert-card ul li input:hover{
+	background-color: #ffe180;
+}
 #product-dessert-card-bg1{
 	width: 100%;
 	height: 315px;
-	background-image: url('../images/product-dessert-list-1.jpg');
+	background-image: url('../images/product-dessert-list-1(400x266).jpg');
 	background-size: cover;
 	background-position: center;
 }
 #product-dessert-card-bg2{
 	width: 100%;
 	height: 315px;
-	background-image: url('../images/product-dessert-list-2.jpg');
+	background-image: url('../images/product-dessert-list-2(300x450).jpg');
 	background-size: cover;
 	background-position: center;
 }
 #product-dessert-card-bg3{
 	width: 100%;
 	height: 315px;
-	background-image: url('../images/product-dessert-list-3.jpg');
+	background-image: url('../images/product-dessert-list-3(476x317).jpg');
 	background-size: cover;
 	background-position: center;
 }
 #product-dessert-card-bg4{
 	width: 100%;
 	height: 315px;
-	background-image: url('../images/product-dessert-list-4.jpg');
+	background-image: url('../images/product-dessert-list-4(300x375).jpg');
 	background-size: cover;
 	background-position: center;
 }
 #product-dessert-card-bg5{
 	width: 100%;
 	height: 315px;
-	background-image: url('../images/product-dessert-list-5.jpg');
+	background-image: url('../images/product-dessert-list-5(310x388).jpg');
 	background-size: cover;
 	background-position: center;
 }
 #product-dessert-card-bg6{
 	width: 100%;
 	height: 315px;
-	background-image: url('../images/product-dessert-list-6.jpg');
+	background-image: url('../images/product-dessert-list-6(300x389).jpg');
 	background-size: cover;
 	background-position: center;
 }
