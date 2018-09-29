@@ -134,29 +134,10 @@ img{
 }
 .top-menu-pc ul li a:hover{
 	border-bottom: 5px solid #ffd180;
+	background-color: #3f5d45;
+	color: #ffffff;
 
 
-}
-/* png圖片色彩賦值嘗試 */
-.icon-cart{
-	display: inline-block;
-	position: relative;
-/* 父元素設定超出範圍看不見 */	
-	overflow: hidden;
-
-}
-.icon-cart-img{
-	display: inline-block;
-	background-image: url('../images/menu-cart(32x32).png');
-    background-repeat: no-repeat;
-	width: 32px;
-	height: 32px;
-
-/* 	為圖標設置投影 */
-	filter: drop-shadow(32px 0 #3f5d45);
-/* 為投影設置偏移 */
-	position: relative;
-	left: -32px;
 }
 
 
@@ -597,6 +578,7 @@ img{
 }
 .product-dessert-card ul li input:hover{
 	background-color: #ffe180;
+	cursor: pointer;
 }
 #product-dessert-card-bg1{
 	width: 100%;
@@ -678,6 +660,150 @@ img{
 .next-page ul li a:active{
 	background-color: #3f5d45;
 	color: #eaf0ed;
+}
+
+/* 登入頁面內容開始 */
+.login-container{
+	width: 100%;
+	padding: 60px 122px;
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: center;
+}
+.member-login{
+	width: 390px;
+	background-color: #3f5d45;
+	text-align: left;	
+}
+.member-login h2{
+	font-size: 36px;
+	padding: 40px 0;
+	text-align: center;
+	line-height: 36px;
+	color: #EAF0ED;
+
+}
+.member-login form{
+	padding: 0 30px;
+	color: #EAF0ED;
+	
+
+}
+.member-login div{
+	width: 330px;
+	height: 56px;
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: center;
+	margin-bottom:16px;
+	
+}
+.member-login div:nth-child(3){
+	height: 45px;
+	margin-bottom:25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.member-login .text{
+	width: 264px;
+	height: 56px;
+	color: #3f5d45;
+	border: none;
+	background-color: #EAF0ED;
+    outline: none;
+
+}
+.member-login .text::placeholder{
+	color: #8DA291;
+	font-size: 16px; 
+	padding: 0 5px;
+}
+.member-login .material-icons{
+    padding: 18px 0; 
+	width: 64px;
+	font-size: 20px;
+	color: #3f5d45;
+	background-color: #EAF0ED;
+    text-align: center;
+   
+
+}
+.member-login .checkbox{
+	width: 16px;
+	height: 16px;
+	
+	text-align: left;
+}
+.member-login p{
+	
+
+}
+.member-login .button{
+	width: 100%;
+	height: 65px;
+	background-color: #eaf0ed;
+	color: #3f5d45;
+	border: none;
+	font-size: 24px;	
+}
+.member-login .button:hover{
+
+	background-color: #ffe180;
+	color: #3f5d45;
+}
+
+.social-account{
+	width: 390px;
+	height: 350px;
+	background-color: #EAF0ED;
+	color: #8DA291;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	align-items: center;
+	padding: 0 30px;
+}
+.social-account h2{
+	font-size: 24px;
+    padding: 40px 0 36px 0;
+    position: relative;
+}
+.social-account h2::before{
+	position: absolute;
+    content: '';
+    width: 30%;
+    height: 1px;
+    background-color: #8da291;
+    top: 50%;
+    left: -50px;
+    z-index: 1;
+}
+.social-account h2::after{
+	position: absolute;
+	content: "";
+	width: 30%;
+	height: 1px;
+	background-color: #8da291;
+	top: 50%;
+	left: 150px;
+	z-index: 1;
+}
+.social-account button{
+	width: 330px;
+	height: 56px;
+	margin-bottom: 16px;
+	border: none;
+	background-color: #ffffff;
+	color: #8da291;
+	font-size: 20px;
+}
+.social-account button:hover{
+	color: #3f5d45;
+	background-color: #ffe180;
 }
 /* 表尾 */
 
