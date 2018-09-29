@@ -655,7 +655,8 @@ img{
 	border: 1px solid #eaf0ed;
 }
 .next-page ul li a:hover{
-	
+	background-color: #3f5d45;
+	color: #eaf0ed;
 }
 .next-page ul li a:active{
 	background-color: #3f5d45;
