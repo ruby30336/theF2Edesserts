@@ -793,18 +793,706 @@ img{
 	left: 150px;
 	z-index: 1;
 }
+.social-account div{
+	height: 56px;
+	margin-bottom: 16px;
+    background-color: #ffffff;
+  
+}
 .social-account button{
 	width: 330px;
 	height: 56px;
-	margin-bottom: 16px;
+	background-color: transparent;
 	border: none;
-	background-color: #ffffff;
 	color: #8da291;
 	font-size: 20px;
+	transition: all .5s;
+
 }
 .social-account button:hover{
 	color: #3f5d45;
+}
+.social-account div:hover{
+	
 	background-color: #ffe180;
+	box-shadow: 3px 3px 10px #626756;
+}
+
+/* 購物車頁面 */
+.cart-container{
+	width: 100%;
+	padding: 39px 42px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.your-cart{
+	width: 620px;
+	height: 100%;
+	color: #3f5d45;
+	border: 1px solid #ffffff;
+	
+
+}
+.your-cart h2{
+	width: 100%;
+	height: 65px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #EAF0ED;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 13px;
+
+	
+}
+.your-cart div{
+	width: 100%;
+	height: 150px;
+    padding: 20px 0;
+
+}
+.border{
+	border-top: 1px solid #EAF0ED;
+	border-bottom: 1px solid #eaf0ed;
+}
+.your-cart div ul{
+	width: 100%;
+	height: 110px;
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: flex-start;
+
+}
+.your-cart div ul li{
+	
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;	
+}
+.your-cart div ul li p{
+	font-size: 20px;
+	margin-bottom: 3px;
+}
+.your-cart div ul li:nth-child(1){
+	
+}
+.your-cart div ul li:nth-child(2){
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin:0 39px;
+	width: 107px;
+}
+.your-cart div ul li:nth-child(4){
+	margin: 0 38px;
+
+}
+.your-cart div span{
+	display: block;
+	width: 110px;
+	height: 110px;
+	background-position: center;
+	background-size: cover;
+}
+#your-cart-dessert-bg1{
+	background-image: url('../images/your-dessert-cart-1(127x159).jpg');
+}
+#your-cart-dessert-bg2{
+	background-image: url('../images/your-dessert-cart-2(119x151).jpg');
+}
+#your-cart-dessert-bg3{
+	background-image: url('../images/your-dessert-cart-3(119x80).jpg');
+}
+.your-cart .number{
+	width: 144px;
+	height: 48px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid #eaf0ed;
+	border-bottom: 1px solid #eaf0ed;
+	color: #3f5d45;
+	padding: 0;
+
+}
+.your-cart .number button{
+	width: 48px;
+	height: 48px;
+	font-size: 16px;
+	color: #3f5d45;
+	border: none;
+	background-color: #ffffff;
+	border: 1px solid #EAF0ED;
+	transition: all .5s;
+
+}
+.your-cart .number button:hover{
+	background-color: #3f5d45;
+	color: #eaf0ed;
+}
+
+.your-cart a{
+	display: block;
+	
+    color: #3f5d45;
+    transition: all .3s;
+}
+.your-cart a:hover{
+	color: #ffe180;
+	border: 5px solid #3f5d45;
+	background-color: #3f5d45;
+	border-radius: 180px;
+}
+.your-order-summary{
+	width: 300px;
+	background-color: #3f5d45;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	align-items: center;
+	color: #eaf0ed;
+}
+.your-order-summary h2{
+	text-align: center;
+	width: 260px;
+	font-size: 24px;
+	padding: 16px 0;
+	border-bottom: 2px solid #eaf0ed;
+}
+.your-order-summary div{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 16px 18px 0 18px;
+	font-size: 16px;
+}
+.your-order-summary div p:nth-child(1){
+	text-align: left;
+}
+.your-order-summary .total{
+	font-size: 20px;
+	margin-bottom: 16px;
+}
+.your-order-summary a{
+	width: 100%;
+	height: 65px;
+}
+.your-order-summary button{
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+	color: #3f5d45;
+	background-color: #eaf0ed;
+	border: none;
+	transition: all .5s;
+}
+.your-order-summary button:hover{
+	background-color:#ffe180;
+	color: #3f5d45;
+}
+/* checkout-1內容開始 */
+.checkout1-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	padding: 60px 122px;
+}
+.transport{
+	width: 460px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: stretch;
+	background-color: #3f5d45;
+	color: #eaf0ed;
+	padding-top: 40px;
+}
+.transport-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding-right: 40px;
+	padding-bottom: 14px;
+}
+.transport.data-process{
+	display: none;
+}
+
+.transport h2{
+	width: 50%;
+	text-align: left;
+	font-size: 36px;
+	padding-left: 40px;
+	font-weight: bold;
+}
+.transport-process{
+	width: 50%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.transport .circle{
+	text-align: right;
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	background-color: #3f5d45;
+	border: 2px solid #eaf0ed;
+	border-radius: 180px;
+	position: relative;
+	z-index: 2;
+
+}
+.transport .circle.active::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	width: 14px;
+	height: 14px;
+	background: #eaf0ed;
+	border-radius: 180px;
+}
+.transport .circle.complete::after{
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 12px;
+	top: 50%;
+	left: 60%;
+	transform: translate(-60%, -50%) rotate(45deg);
+	z-index: 3;
+	border-right: 2px solid #eaf0ed;
+	border-bottom: 2px solid #eaf0ed;
+}
+.transport .bar{
+	height: 2px;
+	width: 100%;
+	background-color: #eaf0ed;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+
+}
+.transport form{
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: stretch;
+	flex-wrap: wrap;
+
+}
+
+.transport form p{
+	font-size: 20px;
+	padding: 16px 0 8px 0;
+	
+}
+
+.transport .your-name{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 40px;
+	flex-wrap: wrap;
+}
+.transport .your-name div{
+	width: 49%;
+}
+
+.transport .your-tel{
+	width: 100%;
+	height: 100px;
+	margin: 0 40px;
+
+}
+.transport .your-address{
+	width: 100%;
+
+	margin: 0 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	margin-bottom: 30px;
+}
+.transport .your-address p{
+	width: 100%;
+}
+.transport .your-address select{
+	margin-bottom: 8px;
+	width: 49%;
+	height: 56px;
+	color: #8DA291;
+	padding: 17px 20px;
+}
+.transport .your-address .address-area{
+	align-self: flex-start;
+}
+.transport input{
+	width: 100%;
+	height: 56px;
+	padding: 20px;
+}
+.transport input::placeholder{
+	padding: 17px 0px;
+	color: #8DA291;
+
+}
+.transport .next-step{
+	width: 100%;
+	height: 65px;
+	background-color: #eaf0ed;
+	color: #3f5d45;
+	border: none;
+	font-size: 24px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+.transport .next-step:hover{
+	background-color: #ffe180;
+	color: #3f5d45;
+}
+/* 付款頁面 */
+.your-credit-card{
+	width: 100%;
+	margin: 0 40px;
+}
+.your-name .your-lastname{
+
+	align-self: flex-end;
+}
+.validity-period{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: wrap;
+	margin: 0 40px;
+	padding-bottom: 30px;
+}
+.validity-period p{
+	width: 100%;
+}
+.validity-period select{
+	padding: 17px 20px;
+	color: #8da291;
+
+}
+.validity-period option{
+	font-size: 16px;
+}
+.validity-period .month{
+	width: 49%;
+	height: 56px;
+}
+.validity-period .year{
+	width: 49%;
+	height: 56px;
+}
+/* 發票頁面 */
+
+.receipt{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+.choise-receipt{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	padding: 16px 40px 0 40px;
+	margin-bottom: 14px;
+
+}
+.choise-receipt button{
+	width:50%;
+	height: 56px;
+	background-color: #3f5d45;
+	color: #eaf0ed;
+	border: 1px solid #eaf0ed;
+	font-size: 20px;
+	transition: all .5s;
+}
+.choise-receipt button:hover{
+	cursor: pointer;
+	box-shadow:1px 1px 3px 2px #8C9381 inset;
+}
+.choise-receipt button.click{
+	background-color: #eaf0ed;
+	color: #3f5d45;
+}
+
+.ele-receipt{
+	width: 100%;
+	padding: 0 40px 30px 40px;
+}
+.ele-receipt p{
+	font-size: 20px;
+	padding: 16px 0 8px 0;
+}
+.ele-receipt input::placeholder{
+	font-size: 16px;
+}
+.ele-receipt.click{
+	display: none;
+}
+.mail-receipt{
+	width: 100%;
+	padding: 0 40px 30px 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+.mail-receipt.click{
+	display: none;
+}
+.mail-receipt p{
+	font-size: 20px;
+	padding: 16px 0 8px 0;
+}
+.mail-receipt div{
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items:flex-end;
+
+}
+.mail-receipt div input{
+	width: 16px;
+	height: 16px;
+	margin-bottom: 8px;
+}
+.mail-receipt select{
+	width:49% ;
+	height: 56px;
+	font-size: 16px;
+	padding: 17px 0px 17px 20px;
+	color: #8da291;
+}
+.mail-receipt select option{
+	font-size: 16px;
+	padding: 17px 20px;
+	color: #8da291;
+}
+.mail-receipt input::placeholder{
+	font-size: 16px;
+}
+
+/* checkout頁面右側欄目 */
+.your-order-summary.checkout-1,.your-shopping-list{
+	background-color: #ffffff;
+	border: 1px solid #eaf0ed;
+	color: #8da291;
+}
+.your-order-summary.checkout-1{
+	margin-bottom: 20px;
+}
+.your-order-summary.checkout-1 h2{
+	width: 100%;
+	height: 65px;
+	background-color: #eaf0ed;
+	color: #8da291;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+}
+.your-shopping-list{
+	width: 100%;
+	
+}
+.your-shopping-list h2{
+	width: 100%;
+	height: 65px;
+	background-color: #eaf0ed;
+	color: #8da291;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+}
+.your-shopping-list ul{
+	width: 100%;
+	padding: 16px 16px 0px 16px;
+}
+.your-shopping-list li{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: flex-start;
+	padding-bottom: 16px;
+
+}
+.your-shopping-list span{
+	display: block ;
+	margin-right: 20px;
+}
+#shopping-list-bg1{
+	width: 120px;
+	height: 80px;
+	background-image: url('../images/your-dessert-cart-1(127x159).jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+#shopping-list-bg2{
+	width: 120px;
+	height: 80px;
+	background-image: url('../images/your-dessert-cart-2(119x151).jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+#shopping-list-bg3{
+	width: 120px;
+	height: 80px;
+	background-image: url('../images/your-dessert-cart-3(119x80).jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+.your-shopping-list ul li div{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	align-self: center;
+	font-size: 20px;
+}
+.your-shopping-list ul li div p:nth-child(1){
+	font-size: 16px;
+	margin-bottom: 2px;
+}
+
+/* 交易成功頁面 */
+.checkout-success-container{
+	max-width: 100%;
+	height: 520px;
+	margin:0 42px 60px 42px;
+	background-image: url('../images/banner-checkout-success(1499x1004).jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #3f5d45;
+}
+.checkout-success-main{
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+.your-process{
+	margin: 0 auto;
+	text-align: center;
+	width: 190px;
+	height: 24px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-bottom: 32px;
+}
+.your-process .circle{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	
+	background-color: #3f5d45;
+	border-radius: 50px;
+	z-index: 5;
+}
+.your-process .circle::after{
+	content: "";
+	width: 6px;
+	height: 12px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	border-right: 2px solid #eaf0ed;
+	border-bottom: 2px solid #eaf0ed;
+	transform: translate(-50%, -50%) rotate(45deg);
+	z-index: 10;
+}
+.your-process .bar{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 1px;
+	background-color: #3f5d45;
+}
+.checkout-success-container h2{
+	margin: 0 auto;
+	margin-bottom: 51px;
+	font-size: 45px;
+	font-weight: bold;
+}
+.checkout-success-container a{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	width: 300px;
+	height: 56px;
+	background-color: #ffe180;
+	color: #3f5d45;
+	transition: all .5s;
+}
+.checkout-success-container a:hover{
+	background-color: #3f5d45;
+	color: #ffe180;
 }
 /* 表尾 */
 
