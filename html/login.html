@@ -25,7 +25,22 @@
 <body>
 	<div class="wrapper">
 		<div class="header">
-			<div class="logo"></div>
+			<div class="top-menu-mb">
+				<a href="#" class="drop-down">
+					<span></span>
+				</a>
+				<ul class="show-menu">
+					<li><a href="home.html">首頁</a></li>
+					<li><a href="product.html">甜點</a></li>
+					<li><a href="login.html">登入</a></li>
+				</ul>
+			</div>
+			<h1 class="logo mb">Sweetaste*</h1>
+			<div class="shopping-page-link-mb">
+				<a href="cart.html">
+					<i class="material-icons">shopping_cart</i>
+				</a>
+			</div>
 			<div class="top-menu-pc">
 				<ul>
 					<li><a href="home.html">首頁</a></li>
@@ -37,12 +52,29 @@
 						</a>
 					</li>
 				</ul>
-			</div>
+			</div>		
 		</div>
 		<div class="login-container">
 			<div class="member-login animated fadeIn">
-				<form>
 					<h2>會員登入</h2>
+					<span class="social-account-mb">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="../images/ic-facebook-logotype.svg">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="../images/ic-google.svg"></a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="../images/ic-yahoo.svg"></a>
+							</li>
+						</ul>
+					</span>
+				<form>
 					<div>
 						<i class="material-icons">person</i><input type="text" name="" placeholder="電子信箱/手機號碼" class="text">
 					</div>
@@ -58,18 +90,20 @@
 			</div>
 			<div class="social-account animated fadeIn">
 				<h2>連結社群帳號</h2>
-				<div><button>facebook</button></div>
-				<div><button>Google</button></div>
-				<div><button>Yahoo!</button></div>
+				<div><button><img src="../images/ic-facebook-logotype.svg"></button></div>
+				<div><button><img src="../images/ic-google.svg"></button></div>
+				<div><button><img src="../images/ic-yahoo.svg"></button></div>
 			</div>
 		</div>
 		<div class="footer">
 			<div class="subscription">
-				<img src="../images/logo-light.svg">
-				<p>訂閱你我的甜蜜郵件</p>
+				<div>
+					<img src="../images/logo-light.svg">
+					<p>訂閱你我的甜蜜郵件</p>
+				</div>
 				<form>
 					<i class="fas fa-envelope"></i>
-					<input type="text" name="">
+					<input type="text" name="" placeholder="example@gmail.com">
 					<button><i class="fas fa-arrow-right"></i></button>
 				</form>
 			</div>

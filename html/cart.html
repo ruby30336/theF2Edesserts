@@ -25,7 +25,22 @@
 <body>
 	<div class="wrapper">
 		<div class="header">
-			<div class="logo"></div>
+			<div class="top-menu-mb">
+				<a href="#" class="drop-down">
+					<span></span>
+				</a>
+				<ul class="show-menu">
+					<li><a href="home.html">首頁</a></li>
+					<li><a href="product.html">甜點</a></li>
+					<li><a href="login.html">登入</a></li>
+				</ul>
+			</div>
+			<h1 class="logo mb">Sweetaste*</h1>
+			<div class="shopping-page-link-mb">
+				<a href="cart.html">
+					<i class="material-icons">shopping_cart</i>
+				</a>
+			</div>
 			<div class="top-menu-pc">
 				<ul>
 					<li><a href="home.html">首頁</a></li>
@@ -37,73 +52,62 @@
 						</a>
 					</li>
 				</ul>
-			</div>
+			</div>		
 		</div>
-		<div class="cart-container">
+		<div class="cart-container">			
 			<div class="your-cart">
 				<h2>您的購物車</h2>
-				<div>
-					<ul>
-						<li><span id="your-cart-dessert-bg1"></span></li>
-						<li><p>焦糖馬卡龍</p>
-						NT$&nbsp;450</li>
-						<li>
-							<div class="number">
-								<button>-</button>
-								2
-								<button>+</button>
-							</div>
+				<ul>
+					<li>
+						<span></span>
+					</li>
+					<li><div class="the-dessert">
+							<p>焦糖馬卡龍</p>
+							<p>&nbsp;NT$&nbsp;450</p>
+						</div>
+						<div class="number">
+							<button>-</button>
+							2
+							<button>+</button>
+						</div>
 						</li>
-						<li><p>NT$&nbsp;900</p></li>
-						<li>
-							<a href="#">
-								<i class="material-icons">delete_outline
-								</i>
-							</a>
+					<li><p>NT$&nbsp;900</p></li>
+					<li><a href="#"><i class="material-icons">delete_outline</i></a></li>
+				</ul>
+				<ul>
+					<li>
+						<span id="your-dessert-bg2"></span>
+					</li>
+					<li><div class="the-dessert">
+							<p>焦糖馬卡龍</p>
+							<p>&nbsp;NT$&nbsp;450</p>
+						</div>
+						<div class="number">
+							<button>-</button>
+							2
+							<button>+</button>
+						</div>
 						</li>
-					</ul>
-				</div>
-				<div class="border">
-					<ul>
-						<li><span id="your-cart-dessert-bg2"></span></li>
-						<li><p>焦糖馬卡龍</p>
-						<p>NT$&nbsp;450</p></li>
-						<li>
-							<div class="number">
-								<button>-</button>
-								2
-								<button>+</button>
-							</div>
+					<li><p>NT$&nbsp;900</p></li>
+					<li><a href="#"><i class="material-icons">delete_outline</i></a></li>
+				</ul>
+				<ul>
+					<li>
+						<span id="your-dessert-bg3"></span>
+					</li>
+					<li><div class="the-dessert">
+							<p>焦糖馬卡龍</p>
+							<p>&nbsp;NT$&nbsp;450</p>
+						</div>
+						<div class="number">
+							<button>-</button>
+							2
+							<button>+</button>
+						</div>
 						</li>
-						<li><p>NT$&nbsp;900</p></li>
-						<li>
-							<a href="#">
-								<i class="material-icons">delete_outline
-								</i>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div><ul>
-						<li><span id="your-cart-dessert-bg3"></span></li>
-						<li><p>焦糖馬卡龍</p>
-						<p>NT$&nbsp;450</p></li>
-						<li>
-							<div class="number">
-								<button>-</button>
-								2
-								<button>+</button>
-							</div>
-						</li>
-						<li><p>NT$&nbsp;900</p></li>
-						<li>
-							<a href="#">
-								<i class="material-icons">delete_outline
-								</i>
-							</a>
-						</li>
-					</ul>
-				</div>
+					<li><p>NT$&nbsp;900</p></li>
+					<li><a href="#"><i class="material-icons">delete_outline</i></a></li>
+				</ul>
 			</div>
 			<div class="your-order-summary">
 				<h2>訂單摘要</h2>
@@ -122,11 +126,13 @@
 		</div>
 		<div class="footer">
 			<div class="subscription">
-				<img src="../images/logo-light.svg">
-				<p>訂閱你我的甜蜜郵件</p>
+				<div>
+					<img src="../images/logo-light.svg">
+					<p>訂閱你我的甜蜜郵件</p>
+				</div>
 				<form>
 					<i class="fas fa-envelope"></i>
-					<input type="text" name="">
+					<input type="text" name="" placeholder="example@gmail.com">
 					<button><i class="fas fa-arrow-right"></i></button>
 				</form>
 			</div>

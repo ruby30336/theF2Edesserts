@@ -25,7 +25,22 @@
 <body>
 	<div class="wrapper">
 		<div class="header">
-			<div class="logo"></div>
+			<div class="top-menu-mb">
+				<a href="#" class="drop-down">
+					<span></span>
+				</a>
+				<ul class="show-menu">
+					<li><a href="home.html">首頁</a></li>
+					<li><a href="product.html">甜點</a></li>
+					<li><a href="login.html">登入</a></li>
+				</ul>
+			</div>
+			<h1 class="logo mb">Sweetaste*</h1>
+			<div class="shopping-page-link-mb">
+				<a href="cart.html">
+					<i class="material-icons">shopping_cart</i>
+				</a>
+			</div>
 			<div class="top-menu-pc">
 				<ul>
 					<li><a href="home.html">首頁</a></li>
@@ -37,7 +52,7 @@
 						</a>
 					</li>
 				</ul>
-			</div>
+			</div>		
 		</div>
 		<div class="container">
 			<div class="banner">
@@ -52,16 +67,21 @@
 		<div class="main">
 			<div class="content">
 				<div class="content_box">
-					<h2><img src="../images/lg-為什麼選擇了做甜點.svg"></h2>
+					<h2 id="home-content_box-wyc-h2-pc"><img src="../images/lg-為什麼選擇了做甜點.svg" ></h2>
+					<h2 id="home-content_box-wyc-h2-mb"><img src="../images/sm-橫式-為什麼選擇了做甜點.svg" ></h2>
 					<p>青山依舊在，幾度夕陽紅。慣看秋月春一壺濁酒喜相逢，浪花淘盡英雄。是非轉頭空，滾滾長江東逝水，白髮漁樵江古今多少事，都付笑談中。<br><br>是非成敗轉頭空，滾滾長江東逝水，白樵江渚上，古今多少事，都付笑談中。</p>
 					<span></span>
 				</div>
 				<div class="content_box">
-					<h2><img src="../images/lg-為什麼一定要吃甜點.svg"></h2>
+					<h2 id="home-content_box-wye-h2-pc"><img src="../images/lg-為什麼一定要吃甜點.svg"></h2>
+					<h2 id="home-content_box-wye-h2-mb"><img src="../images/sm-橫式-為什麼一定要吃甜點.svg"></h2>
 					<p>青山依舊在，幾度夕陽紅。慣看秋月春一壺濁酒喜相逢，浪花淘盡英雄。是非轉頭空，滾滾長江東逝水，白髮漁樵江古今多少事，都付笑談中。<br><br>是非成敗轉頭空，滾滾長江東逝水，白樵江渚上，古今多少事，都付笑談中。</p>
 					<span></span>
 				</div>
-				<div><h2><img src="../images/lg-想吃甜點是不需要理由的.svg"></h2></div>
+				
+					<h2 id="home-content_box-dnr-h2-pc"></h2>
+					<h2 id="home-content_box-dnr-h2-mb"></h2>
+				
 			</div>
 		</div>
 		<div class="home-dessert-list">
@@ -75,8 +95,8 @@
 						<div>
 							<p>焦糖馬卡龍</p>
 						</div>
-						<div>
-							<p class="dessert-price">NT&nbsp;$450</p>
+						<div class="dessert-price show">
+							<p >NT&nbsp;$450</p>
 						</div>
 					</li>
 					<li>
@@ -125,11 +145,13 @@
 		</div>
 		<div class="footer">
 			<div class="subscription">
-				<img src="../images/logo-light.svg">
-				<p>訂閱你我的甜蜜郵件</p>
+				<div>
+					<img src="../images/logo-light.svg">
+					<p>訂閱你我的甜蜜郵件</p>
+				</div>
 				<form>
 					<i class="fas fa-envelope"></i>
-					<input type="text" name="">
+					<input type="text" name="" placeholder="example@gmail.com">
 					<button><i class="fas fa-arrow-right"></i></button>
 				</form>
 			</div>

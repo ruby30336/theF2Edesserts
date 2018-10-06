@@ -8,7 +8,7 @@ $(document).ready(function() {
 	// 點擊垃圾桶
 	$('.your-cart ul li a').click(function(event) {
 		/* Act on the event */
-		$(this).parent().parent().parent().remove();
+		$(this).parent().parent().remove();
 	});
 	// 發票頁按鈕
 	$('.choise-receipt button').click(function(event) {
@@ -26,5 +26,15 @@ $(document).ready(function() {
 		/* Act on the event */
 		$('.ele-receipt').toggleClass("click");
 		$('.mail-receipt').toggleClass("click");
+	});
+	// 手機版漢堡選單
+	$('.drop-down').click(function(event) {
+		/* Act on the event */
+		$('.top-menu-mb ul').slideToggle(500);
+	});
+	// 手機漢堡選單按鈕動畫
+	$('.drop-down').click(function(event) {
+		/* Act on the event */
+		$('.drop-down').toggleClass("click");
 	});
 });
