@@ -1,0 +1,17 @@
+@mixin Large{
+    @media(min-width:992px){
+        @content;
+    }
+}
+
+@mixin pad {
+    @media (max-width:768px) {
+        @content;
+    }
+    
+}
+@mixin iphone5 {
+    @media(max-width: 320px){
+        @content;
+    }
+}

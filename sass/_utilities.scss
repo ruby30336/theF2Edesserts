@@ -1,0 +1,101 @@
+// colors
+
+
+$SweetTaste-MainColor:#3F5D45;//第一主色
+$SweetTaste-SecondColor:#FFE180;//第二主色
+$SweetTaste-MainColor-alpha:rgba(63, 93, 69, 0.65);
+$SweetTaste-SecondColor-alpha:rgba(255, 225, 128, 0.65);
+$SweetTaste-ThirdColor:rgba(234, 240, 237, 1);//第三主色
+$SweetTaste-ForthColor:rgba(141, 162, 145, 1);//第四主色
+$SweetTaste-ThirdColor-alpha:rgba(234, 240, 237, 0.65); //第三主色
+.Main-color {
+    color: $SweetTaste-MainColor !important;
+}
+
+.Main-color-alpha {
+    color: $SweetTaste-MainColor-alpha;
+}
+.bg-main-color{
+    background-color: $SweetTaste-MainColor;
+}
+
+.Second-color {
+    color: $SweetTaste-SecondColor;
+}
+
+.Sencond-color-alpha {
+    color: $SweetTaste-SecondColor-alpha;
+}
+
+.bg-second-color {
+    background-color: $SweetTaste-SecondColor;
+}
+.Third-color {
+    color: $SweetTaste-ThirdColor;
+}
+.Third-color-alpha {
+    color: $SweetTaste-ThirdColor-alpha;
+}
+.bg-third-color {
+    background-color: $SweetTaste-ThirdColor;
+}
+
+.Forth-color {
+    color: $SweetTaste-ForthColor;
+}
+
+// fontsize
+
+$font-size-xs:16px;
+$font-size-sm:20px;
+$font-size-md:24px;
+$font-size-lg:33px;
+$font-size-xl:36px;
+
+.font-xs {
+    font-size: $font-size-xs;
+}
+
+.font-sm {
+    font-size: $font-size-sm;
+}
+
+.font-md {
+    font-size: $font-size-md;
+}
+
+.font-lg {
+    font-size: $font-size-lg;
+}
+
+.font-xl{
+    font-size: $font-size-xl;
+}
+// writing-mode
+.text-rl-5{
+    @include text-rl(5px);
+}
+.text-rl-10 {
+    @include text-rl(10px);
+}
+
+.text-rl-20 {
+    @include text-rl(20px);
+}
+// others
+.list-no-style{
+    list-style-type:none;
+}
+.link-no-style{
+    text-decoration: none;
+}
+.overflow-auto{
+    overflow: auto;
+}
+.overflow-x-scroll{
+    overflow-x:scroll;
+    overflow-y: hidden;
+}
+.overflow-y-hidden{
+    overflow-y: hidden;
+}

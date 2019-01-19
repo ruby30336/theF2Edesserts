@@ -1,0 +1,585 @@
+@import 'mixin'; //常用樣式
+@import 'grid'; //常用斷點
+@import 'utilities'; //常用變數
+// utilities
+
+.logo-bg {
+    background-image: url("../images/logo-all-dark.svg");
+    background-size: 220px 40px;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 43px;
+    margin: 0;
+
+}
+
+.logo-bg-sm {
+    background-image: url("../images/logotype-lg-dark.svg");
+    background-size: 115px 17px;
+    background-repeat: no-repeat;
+    width: 115px;
+    height: 18px;
+    margin: 0;
+}
+
+.bg-cover {
+    @include bg-cover;
+}
+
+.mt-247 {
+    margin-top: 247px;
+}
+
+.mt-lg-247 {
+    @include Large {
+        margin-top: 247px;
+    }
+}
+
+.mt-105 {
+    margin-top: 105px;
+}
+
+// others
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+.font-mainFont {
+    font-family: Roboto, '微軟正黑體', sans-serif;
+}
+
+.main-navbar {
+    li {
+        a {
+            color: $SweetTaste-MainColor !important;
+            transition: all .3s ease-in;
+        }
+
+        a:hover {
+            cursor: pointer;
+            color: white !important;
+            background-color: $SweetTaste-MainColor;
+            border-bottom: 3px solid $SweetTaste-SecondColor;
+        }
+    }
+}
+
+.jumbotron-homepage {
+    background-image: url("../images/home-banner(4000x3201).jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 496px;
+}
+
+.banner-menu {
+    left: 50%;
+    top: 400px;
+    transform: translateX(-50%);
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        width: 80%;
+
+        @include pad {
+            width: 100%;
+        }
+
+        li {
+            width: 33.33333%;
+            height: 260px;
+            transition: all .3s ease-in;
+
+            a {
+                color: $SweetTaste-SecondColor;
+                background-color: $SweetTaste-MainColor-alpha;
+                width: 100%;
+                height: 260px;
+                transition: all .3s ease-in;
+            }
+
+            a:hover {
+                color: $SweetTaste-MainColor;
+                background-color: $SweetTaste-SecondColor-alpha;
+                text-decoration: none;
+
+            }
+        }
+
+        li:hover {
+            box-shadow: 3px 3px 10px $SweetTaste-MainColor-alpha;
+        }
+    }
+}
+
+.banner-menu-sm {
+    ul {
+        list-style-type: none;
+
+        li {
+            width: 33.33333%;
+            height: 260px;
+            transition: all .3s ease-in;
+
+            a {
+                color: $SweetTaste-SecondColor;
+                background-color: $SweetTaste-MainColor-alpha;
+                width: 100%;
+                height: 260px;
+            }
+
+            a:hover {
+                color: $SweetTaste-MainColor;
+                background-color: $SweetTaste-SecondColor-alpha;
+                text-decoration: none;
+
+            }
+        }
+    }
+}
+
+.content-photo {
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    top: -20px;
+
+}
+
+.content-body {
+    line-height: 32px;
+}
+
+.content-title {
+    position: absolute;
+    width: 90px;
+    height: 310px;
+    top: -20px;
+}
+
+.content-title-sm {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.btn-addCart-home {
+    background-color: $SweetTaste-ThirdColor;
+    color: $SweetTaste-MainColor !important;
+    transition: all .3s ease-in;
+
+}
+
+.btn-addCart-home:hover {
+    background-color: $SweetTaste-SecondColor;
+}
+
+.home-cart {
+    transition: all .1s ease-in;
+
+
+}
+
+.home-cart:hover {
+    box-shadow: 3px 3px 10px $SweetTaste-MainColor-alpha;
+}
+
+.ribbon {
+    position: absolute;
+    left: 10px;
+    background-color: $SweetTaste-MainColor;
+    writing-mode: vertical-rl;
+    letter-spacing: 8px;
+    color: white;
+    padding: 10px 5px;
+}
+
+.likeit {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: $SweetTaste-MainColor;
+
+}
+
+.likeit:hover {
+    cursor: pointer;
+    color: pink !important;
+    font-size: $font-size-md;
+
+}
+
+.likeit.active {
+    color: white !important;
+    background-color: pink;
+    border: 8px solid pink;
+    border-radius: 50px;
+    font-size: $font-size-md;
+    top: 12px;
+    right: 12px;
+}
+
+.home-cart-sm {
+    ul {
+        min-height: 500px;
+
+        li {
+            min-width: 280px;
+            height: 436px;
+        }
+    }
+}
+
+footer {
+    .email-submit {
+        min-height: 38px;
+
+        p {
+            min-height: 38px;
+            border: 0;
+        }
+
+        input {
+            min-height: 38px;
+
+        }
+
+        button {
+            background-color: $SweetTaste-SecondColor;
+            color: $SweetTaste-MainColor;
+            box-shadow: none;
+
+            @include pad {}
+        }
+
+        button:hover {
+            color: $SweetTaste-ForthColor;
+
+        }
+    }
+}
+
+
+
+// product-page
+.jumbotron-productpage {
+    background-image: url('../images/product-banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 496px;
+
+    h3 {
+        background-image: url('../images/lg-想吃甜點是不需要理由的.svg');
+        width: 90px;
+        height: 330px;
+    }
+
+}
+
+.product-list {
+    li:hover {
+        background-color: $SweetTaste-ThirdColor;
+        cursor: pointer;
+    }
+}
+
+
+
+.product-pagination {
+    .page-item.active .page-link {
+        background-color: $SweetTaste-MainColor;
+        border-color: $SweetTaste-ForthColor;
+        color: $SweetTaste-ThirdColor !important;
+    }
+
+    .page-link:hover {
+        background-color: $SweetTaste-MainColor;
+        color: $SweetTaste-ThirdColor !important;
+    }
+
+}
+
+// login-page
+
+.member-login {
+    .form-control {
+        font-size: $font-size-xs;
+    }
+
+    input::placeholder {
+        font-size: $font-size-xs;
+    }
+
+    input:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .btn:hover {
+        background-color: $SweetTaste-ThirdColor;
+
+
+    }
+}
+
+.social-login {
+    .text-divider::before {
+        content: "";
+        flex: 1;
+        border: none;
+        transform: translateY(50%);
+        margin-right: 10px;
+        border-top: 1px solid $SweetTaste-MainColor;
+    }
+
+    .text-divider::after {
+        content: "";
+        flex: 1;
+        border: none;
+        margin-left: 10px;
+        transform: translateY(50%);
+        border-top: 1px solid $SweetTaste-MainColor;
+    }
+
+    .btn {
+        height: 56px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        transition: all .10s ease-in;
+
+        .social-link {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+        }
+    }
+
+    .btn:hover {
+        background-color: $SweetTaste-SecondColor !important;
+        color: $SweetTaste-MainColor;
+        box-shadow: 3px 3px 10px $SweetTaste-MainColor-alpha;
+    }
+}
+
+.social-login-sm {
+    .social-link {
+        width: 100%;
+        height: 56px;
+        min-height: 44px;
+        background-color: white;
+
+        .icon {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+    }
+
+    .social-link:hover {
+        background-color: $SweetTaste-SecondColor;
+    }
+
+
+}
+
+
+
+// cart-page
+
+.cart {
+    .cart-photo {
+        width: 110px;
+        height: 110px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .input-number {
+        color: $SweetTaste-MainColor !important;
+
+    }
+
+    .border-color {
+        border-color: $SweetTaste-ThirdColor;
+        border-width: 0.5px;
+    }
+
+    .submit:hover {
+        background-color: $SweetTaste-ThirdColor;
+
+    }
+
+    .delete:hover {
+        background-color: $SweetTaste-MainColor;
+        color: $SweetTaste-SecondColor;
+        border: 10px solid $SweetTaste-MainColor;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    #btnGroupAddon:hover {
+        background-color: $SweetTaste-MainColor !important;
+        color: $SweetTaste-ThirdColor;
+        cursor: pointer;
+
+    }
+
+}
+
+// checkout_1-page
+.checkout-input {
+    select {
+        min-height: 57px;
+    }
+
+    input::placeholder {
+        color: $SweetTaste-ForthColor;
+    }
+
+    .progress-area {
+
+        height: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .circle {
+            height: 24px;
+            width: 24px;
+            border: 2px solid #8DA291;
+            border-radius: 20px;
+            position: relative;
+            background-color: #3F5D45;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .circle.active::after {
+            content: "";
+            height: 16px;
+            width: 16px;
+            display: block;
+            background-color: #EAF0ED;
+            border-radius: 20px;
+        }
+
+        .circle.material-icons.complete {
+            font-size: 1rem;
+            color: $SweetTaste-MainColor;
+            font-weight: bold;
+            background-color: $SweetTaste-ThirdColor;
+            border-radius: 50%;
+        }
+
+    }
+
+    .progress-area::after {
+        content: "";
+        display: block;
+        position: absolute;
+
+        top: 30%;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: #8DA291;
+    }
+
+    a:hover {
+        text-decoration: none;
+        background-color: $SweetTaste-ThirdColor;
+    }
+}
+
+// checkout_3-page
+.receipt {
+    button:hover {
+        background-color: $SweetTaste-ThirdColor-alpha;
+        color: $SweetTaste-MainColor;
+    }
+
+    button.active {
+        background-color: $SweetTaste-ThirdColor;
+        color: $SweetTaste-MainColor;
+    }
+}
+
+// checkout_success-page
+.banner-success {
+    min-height: 460px;
+    width: 100%;
+    background-image: url('../images/banner-checkout-success.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    .progress-area {
+        width:300px;
+        height: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .circle {
+            height: 24px;
+            width: 24px;
+            border: 2px solid $SweetTaste-MainColor;
+            border-radius: 20px;
+            position: relative;
+            background-color:$SweetTaste-MainColor;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .circle.material-icons.complete {
+            font-size: 1rem;
+            color: $SweetTaste-ThirdColor;
+            font-weight: bold;
+            background-color: $SweetTaste-MainColor;
+            border-radius: 50%;
+        }
+
+    }
+
+    .progress-area::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 24%;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color:$SweetTaste-MainColor;
+    }
+    img{
+        max-width:300px;
+    }
+    .btn-block{
+        max-width:300px;
+
+    }
+    .btn:hover{
+        background-color:$SweetTaste-ThirdColor;
+        
+    }
+
+}
